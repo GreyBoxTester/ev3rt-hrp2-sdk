@@ -51,6 +51,7 @@ OMIT_DEBUG_INFO = 1
 BUILD_LOADABLE_MODULE = 1
 CONFIG_EV3RT_APPLICATION = 1
 include @(APPLDIR)/Makefile.inc
+include $(EV3RT_SDK_LIB_DIR)/gcc-stubs/Makefile
 ifeq ($(SRCLANG),c++)
   USE_CXX = true
   APPL_CXXOBJS += app.o @(APPLOBJS)
